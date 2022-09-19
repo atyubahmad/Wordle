@@ -44,10 +44,10 @@ void initFile(){
     string wordList[WORD_NUM]; // Initializing a list to store the words from the file
     int count = 0; // Initializing a counter to help store the words from the file into the list
 
-    ifstream wordfile ("proj1_data.txt"); // opening and reading the file
+    ifstream wordfile ("wordle_data.txt"); // opening and reading the file
 
     if(wordfile.is_open()){ // If statement to check if the file is open
-        cout << "Welcome to UMBC Wordle" << endl;
+        cout << "Welcome to Wordle" << endl;
         cout << "Your file was imported!" << endl;
 
         while(wordfile >> potentialWord) { // While loop to run through all of the words
